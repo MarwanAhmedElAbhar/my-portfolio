@@ -1,5 +1,5 @@
 <template>
-  <div class="px-40">
+  <div class="px-50">
     <header>
       <nav>
         <ul class="d-flex justify-content-center">
@@ -17,8 +17,8 @@
 </script>
 
 <style lang="sass" scoped>
-.px-40
-    padding: 0px 40px
+.px-50
+    padding: 0px 50px
 nav
     position: sticky
     width: 100%
