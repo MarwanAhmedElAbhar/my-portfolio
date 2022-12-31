@@ -2,18 +2,26 @@
 let isFirstTextDisplayed = ref(true);
 onMounted(() => {
   setInterval(() => {
-    isFirstTextDisplayed.value = !isFirstTextDisplayed.value
+    isFirstTextDisplayed.value = !isFirstTextDisplayed.value;
   }, 3000);
 });
 </script>
 
 <template>
-  <div class="d-flex justify-content-between">
-    <div class="col-6">
-      <div class="d-flex align-items-baseline">
-        <h1 class="mr-2">Hello World, I'm</h1>
-       <span :class="isFirstTextDisplayed ? 'fade-in' : 'fade-out'" class="text-secondary font-style">Marwan Ahmed</span>
-       <span :class="isFirstTextDisplayed ? 'fade-out' : 'fade-in'" class="text-secondary font-style">Frontend Developer</span>
+  <div class="row justify-content-between">
+    <div class="col-md-6 col-12">
+      <div class="row align-items-baseline no-gutters">
+        <h1 class="mr-2 col-sm-12 col-md-auto">Hello World, I'm</h1>
+        <span
+          :class="isFirstTextDisplayed ? 'fade-in' : 'fade-out'"
+          class="text-secondary font-style col-sm-12 col-md-auto"
+          >Marwan Ahmed</span
+        >
+        <span
+          :class="isFirstTextDisplayed ? 'fade-out' : 'fade-in'"
+          class="text-secondary font-style col-sm-12 col-md-auto"
+          >Frontend Developer</span
+        >
       </div>
       <div class="mt-4">
         <p class="description">
@@ -28,7 +36,7 @@ onMounted(() => {
         <div class="github-btn cursor-pointer">Visit Github Account</div>
       </div>
     </div>
-    <div class="col-4">
+    <div class="col-md-4 col-12">
       <img
         class="cover-img"
         src="@/assets/images/man-working.jpeg"
@@ -76,41 +84,41 @@ onMounted(() => {
 
 .fade-out
   display: none
-  animation: fadeOut 2s        
+  animation: fadeOut 2s
 
 @keyframes fadeIn
-  0% 
+  0%
     opacity: 0
-  100% 
+  100%
     opacity: 1
 
 @-moz-keyframes fadeIn
   0% 
-    opacity: 0
+  opacity: 0
   100%  
-    opacity: 1
+  opacity: 1
 
 @-webkit-keyframes fadeIn
   0% 
-    opacity: 1
+  opacity: 1
   100%  
-    opacity: 0
+  opacity: 0
 
 @keyframes fadeOut
-  0% 
+  0%
     opacity: 1
-  100% 
+  100%
     opacity: 0
 
 @-moz-keyframes fadeOut
   0% 
-    opacity: 1
+  opacity: 1
   100%  
-    opacity: 0
+  opacity: 0
 
 @-webkit-keyframes fadeOut
   0% 
-    opacity: 1
+  opacity: 1
   100%  
-    opacity: 0   
+  opacity: 0
 </style>
