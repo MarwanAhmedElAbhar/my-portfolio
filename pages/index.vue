@@ -6,6 +6,7 @@
   <div>
     <div class="p-70"></div>
     <About />
+    <Projects />
   </div>
 </template>
 
