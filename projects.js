@@ -15,7 +15,7 @@ export default  [
     {
         id: 1,
         name: "Markdown Editor",
-        img: "",
+        img: "img/markdown-50.png",
         link: "",
         githubRepo: "",
         tags: tagsList.filter(tag => ["Vue", "SASS"].includes(tag.name))
@@ -24,7 +24,7 @@ export default  [
 
         id: 2,
         name: "Mapty",
-        img: "",
+        img: "/img/markdown-50.png",
         link: "",
         githubRepo: "",
         tags: tagsList.filter(tag => ["JavaScript", "SASS"].includes(tag.name))
@@ -33,7 +33,7 @@ export default  [
 
         id: 3,
         name: "Jira Clone",
-        img: "",
+        img: "img/markdown-50.png",
         link: "",
         githubRepo: "",
         tags: tagsList.filter(tag => ["Vue", "SASS", "JavaScript"].includes(tag.name))
