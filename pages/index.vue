@@ -5,8 +5,10 @@
 <template>
   <div>
     <div class="p-70"></div>
-    <About />
-    <Projects />
+    <AboutMain id="about"/>
+    <ProjectsMain id="projects"/>
+    <ExperienceMain id="experiences"/>
+    <ContactMain id="contact" />
   </div>
 </template>
 
