@@ -43,7 +43,7 @@ onMounted(() => {
     <div class="col-md-4 col-12">
       <img
         class="cover-img"
-        src="img/man-working.jpeg"
+        src="~/assets/img/man-working.jpeg"
         alt="man-working"
       />
     </div>
