@@ -12,17 +12,21 @@
       to contact me.
     </p>
     <div class="details-container">
-    <div class="d-flex align-items-center">
+    <div class="d-flex align-items-center px-2 word-break">
       <img src="~/assets/img/map.svg" alt="" />
       <p class="ml-2 info-details">Mohandeseen, Giza, Egypt</p>
     </div>
-    <div class="d-flex align-items-center mt-4">
+    <div class="d-flex align-items-center mt-4 px-2 word-break">
       <img src="~/assets/img/mail.svg" alt="" />
       <p class="ml-2 info-details">marwan.a.elabhar@gmail.com</p>
     </div>
-      <div class="d-flex align-items-center mt-4">
+      <div class="d-flex align-items-center mt-4 px-2 word-break">
       <img src="~/assets/img/phone.svg" alt="" />
       <p class="ml-2 info-details">+201000632144</p>
+    </div>
+       <div class="d-flex align-items-center mt-4 px-2 word-break">
+      <img src="~/assets/img/linkedin.svg" alt="" />
+      <a class="ml-2 info-details linkedin-profile" href="https://www.linkedin.com/in/marwan-ahmed3 ">LinkedIn Profile</a>
     </div>
     </div>
   </div>
@@ -44,5 +48,7 @@
     font-weight: 500
     line-height: 1.3
 .details-container
-    margin-top: 50px        
+    margin-top: 50px   
+.linkedin-profile
+  color: #000         
 </style>
