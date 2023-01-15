@@ -8,8 +8,8 @@ const { experience } = defineProps({
 
 <template>
   <div class="content">
-    <div class="d-flex align-items-baseline mb-2">
-      <p class="experience-name">{{ experience.name }}</p>
+    <div class="d-flex align-items-baseline mb-2 flex-wrap">
+      <p class="experience-name mr-2">{{ experience.name }}</p>
       <p class="experience-period">{{ experience.period }}</p>
     </div>
     <p class="experience-description">{{ experience.description }}</p>
@@ -37,7 +37,6 @@ const { experience } = defineProps({
     font-size: 26px
 .experience-period
     font-size: 16px
-    margin-left: 20px
 .experience-description
     font-size: 18px
     color: #5b5b5b
