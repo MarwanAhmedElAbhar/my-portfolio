@@ -5,7 +5,6 @@
   <form
     action="mailto:marwan.a.elabhar@gmail.com"
     method="get"
-    enctype="text/plain"
     class="form-container"
   >
     <div class="row">
@@ -33,7 +32,7 @@
           id=""
           cols="30"
           rows="10"
-          placeholder="Subject"
+          placeholder="Body"
           class="w-100 form-control"
         ></textarea>
       </div>
@@ -51,29 +50,41 @@
 
 <style lang="sass" scoped>
 .form-container
-    padding: 30px
+  padding: 30px
 .form-control
-    outline: none
-    box-shadow: none
-    border: 1px solid #ced4da
-    border-radius: 4px
-    font-weight: bold
-    font-size: 16px
-    color: #5b5b5b
-    padding: 10px
-    margin-bottom: 35px
-    &:focus, &:hover, &:active
-        border: 1px solid #c4d1b0
+  outline: none
+  box-shadow: none
+  border: 1px solid #ced4da
+  border-radius: 4px
+  font-weight: bold
+  font-size: 16px
+  color: #333
+  padding: 10px
+  margin-bottom: 35px
+  &:focus, &:hover, &:active
+    border: 1px solid #c4d1b0
+  &:-ms-input-placeholder, &::placeholder
+    color: red
+    opacity: 1
 input.form-control
-    height: 40px
+  height: 40px
 textarea.form-control
-    resize: none
+  font-family: sans-serif
+  resize: none
 .submit-input
-    border: none
-    background: #c4d1b0
-    color: #fff
-    &:hover
-        color: #eee
-        background: #495057
-        transition: all 0.4s ease
+  border: none
+  background: #c4d1b0
+  color: #fff
+  &:hover
+    color: #eee
+    background: #495057
+    transition: all 0.4s ease
+::placeholder 
+  color: rgba(0, 0, 0, 0.4)
+  opacity: 1
+:-ms-input-placeholder
+  color: rgba(0, 0, 0, 0.4)
+::-ms-input-placeholder
+  color: rgba(0, 0, 0, 0.4)
+
 </style>
