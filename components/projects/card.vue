@@ -19,7 +19,7 @@ const showIcons = ref(false);
 </script> 
  
 <template>
-  <div class="card-body mr-5">
+  <div class="card-body">
     <div
       @mouseenter="showIcons = true"
       @mouseleave="showIcons = false"
