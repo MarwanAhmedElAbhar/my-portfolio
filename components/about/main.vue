@@ -29,7 +29,7 @@ onMounted(() => {
         </div>
         <div class="mt-4">
           <p class="description">
-            Care and Passion are the two words I relate to the most while
+            Care and Commitment are the two words I relate to the most while
             building products for others. I also love coding with my cat.
           </p>
         </div>
