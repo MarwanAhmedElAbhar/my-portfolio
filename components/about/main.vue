@@ -33,7 +33,7 @@ onMounted(() => {
         <div class="d-flex mt-4 align-items-center">
           <a
             class="btn download-btn d-flex align-items-center cursor-pointer"
-            href="~/assets/files/Marwan Ahmed.pdf" download
+            href="/Marwan Ahmed.pdf" download
           >
             Download Resume
           </a>
