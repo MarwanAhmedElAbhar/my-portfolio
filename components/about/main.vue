@@ -1,7 +1,7 @@
 <script setup>
 let isFirstTextDisplayed = ref(true);
 const visitGithub = () => {
-  window.open("https://github.com/MarwanAhmedElAbhar/");
+  window.open("https://github.com/marwan-elabhar/");
 };
 onMounted(() => {
   setInterval(() => {
@@ -34,11 +34,12 @@ onMounted(() => {
           </p>
         </div>
         <div class="d-flex mt-4 align-items-center">
-          <div
+          <a
             class="btn download-btn d-flex align-items-center cursor-pointer"
+            href="~/assets/files/Marwan Ahmed.pdf" download
           >
             Download Resume
-          </div>
+          </a>
           <div class="btn github-btn cursor-pointer" @click="visitGithub">
             Visit Github Account
           </div>
@@ -74,6 +75,7 @@ onMounted(() => {
   color: #5b5b5b
   background-color: #eee
   margin-right: 20px
+  text-decoration: none
   &:hover
     color: #c4d1b0
     transition: 0.3s
