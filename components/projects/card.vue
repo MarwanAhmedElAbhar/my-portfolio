@@ -11,10 +11,6 @@ const getAssetSrc = (name) => {
   return useAssets(path);
 };
 
-const visitGithubRepo = () => {
-  window.open(project.githubRepo);
-};
-
 const showIcons = ref(false);
 </script> 
  
@@ -45,14 +41,17 @@ const showIcons = ref(false);
           align-items-center
         "
       >
+      <NuxtLink :to="project.link" target="_blank">
         <img src="~/assets/img/link.svg" alt="" class="cursor-pointer" />
+      </NuxtLink>
+        <NuxtLink :to="project.githubRepo" target="_blank">
         <img
           src="~/assets/img/github.png"
           alt=""
           class="ml-3 cursor-pointer"
           style="width: 40px"
-          @click="visitGithubRepo"
         />
+        </NuxtLink>
       </div>
     </div>
 
