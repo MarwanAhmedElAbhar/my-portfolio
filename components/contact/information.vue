@@ -26,12 +26,12 @@
       </div>
       <div class="d-flex align-items-center mt-4 px-2 word-break">
         <img src="~/assets/img/linkedin.svg" alt="linkedin-image" />
-        <a
+        <NuxtLink
           class="ml-2 info-details linkedin-profile"
-          href="https://www.linkedin.com/in/marwanelabhar"
+          to="https://www.linkedin.com/in/marwanelabhar"
           target="_blank"
-          >LinkedIn Profile</a
-        >
+          >LinkedIn Profile</NuxtLink>
+        
       </div>
     </div>
   </div>

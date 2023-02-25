@@ -1,8 +1,5 @@
 <script setup>
 let isFirstTextDisplayed = ref(true);
-const visitGithub = () => {
-  window.open("https://github.com/marwan-elabhar/");
-};
 onMounted(() => {
   setInterval(() => {
     isFirstTextDisplayed.value = !isFirstTextDisplayed.value;
@@ -40,9 +37,9 @@ onMounted(() => {
           >
             Download Resume
           </a>
-          <div class="btn github-btn cursor-pointer" @click="visitGithub">
+          <NuxtLink class="btn github-btn cursor-pointer" target="_blank" to="https://github.com/marwan-elabhar/">
             Visit Github Account
-          </div>
+          </NuxtLink>
         </div>
       </div>
       <div class="col-md-4 col-12">
@@ -81,6 +78,7 @@ onMounted(() => {
     transition: 0.3s
 .github-btn
   background-color: #474559
+  text-decoration: none
   color: #fff
   &:hover
     background-color: #c4d1b0
