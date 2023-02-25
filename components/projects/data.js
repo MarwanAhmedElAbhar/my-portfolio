@@ -3,6 +3,10 @@ const tagsList = [{
     backgroundColor: "#41B983"
 },
 {
+    name: "CSS",
+    backgroundColor: "#264de4"
+},
+{
     name: "Firebase",
     backgroundColor: "#ffa72c"
 },
@@ -29,8 +33,8 @@ export default  [
         id: 2,
         name: "Mapty",
         img: "img/mapty-icon.png",
-        link: "",
-        githubRepo: "",
-        tags: tagsList.filter(tag => ["JavaScript", "SASS"].includes(tag.name))
+        link: "https://mapty-main.vercel.app/",
+        githubRepo: "https://github.com/marwan-elabhar/mapty",
+        tags: tagsList.filter(tag => ["JavaScript", "CSS"].includes(tag.name))
     },
 ]
