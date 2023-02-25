@@ -3,6 +3,10 @@ const tagsList = [{
     backgroundColor: "#41B983"
 },
 {
+    name: "Firebase",
+    backgroundColor: "#ffa72c"
+},
+{
     name: "SASS",
     backgroundColor: "#CF649A"
 }, {
@@ -17,8 +21,8 @@ export default  [
         name: "Markdown Editor",
         img: "img/markdown.png",
         link: "",
-        githubRepo: "https://github.com/MarwanAhmedElAbhar/markdown-editor",
-        tags: tagsList.filter(tag => ["Vue", "SASS"].includes(tag.name))
+        githubRepo: "https://github.com/marwan-elabhar/markdown-editor",
+        tags: tagsList.filter(tag => ["Vue", "Firebase", "SASS"].includes(tag.name))
     },
     {
 
