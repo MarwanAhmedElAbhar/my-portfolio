@@ -1,15 +1,7 @@
 <script setup>
-import useAssets from "~/handleImages";
-
 const { project } = defineProps({
   project: Object,
 });
-
-const getAssetSrc = (name) => {
-  const path = `/assets/img/${name}`;
-  console.log(path)
-  return useAssets(path);
-};
 
 const showIcons = ref(false);
 </script> 
@@ -19,13 +11,7 @@ const showIcons = ref(false);
     <div
       @mouseenter="showIcons = true"
       @mouseleave="showIcons = false"
-      class="
-        upper-box
-        d-flex
-        flex-column
-        justify-content-center
-        align-items-center
-      "
+      class="upper-box d-flex flex-column justify-content-center align-items-center"
     >
       <div class="d-flex justify-content-center align-items-center w-100">
         <img :src="project.img" alt="alt" class="project-image" />
@@ -34,23 +20,18 @@ const showIcons = ref(false);
 
       <div
         v-if="showIcons"
-        class="
-          buttons-container
-          d-flex
-          justify-content-center
-          align-items-center
-        "
+        class="buttons-container d-flex justify-content-center align-items-center"
       >
-      <NuxtLink :to="project.link" target="_blank">
-        <img src="~/assets/img/link.svg" alt="" class="cursor-pointer" />
-      </NuxtLink>
+        <NuxtLink :to="project.link" target="_blank">
+          <img src="~/assets/img/link.svg" alt="" class="cursor-pointer" />
+        </NuxtLink>
         <NuxtLink :to="project.githubRepo" target="_blank">
-        <img
-          src="~/assets/img/github.png"
-          alt=""
-          class="ml-3 cursor-pointer"
-          style="width: 40px"
-        />
+          <img
+            src="~/assets/img/github.png"
+            alt=""
+            class="ml-3 cursor-pointer"
+            style="width: 40px"
+          />
         </NuxtLink>
       </div>
     </div>
