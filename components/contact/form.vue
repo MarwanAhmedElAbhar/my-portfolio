@@ -3,8 +3,8 @@
 
 <template>
   <form
-    action="mailto:marwan.a.elabhar@gmail.com"
-    method="get"
+    action="https://formspree.io/f/xpzedggy"
+    method="POST"
     class="form-container"
   >
     <div class="row">
@@ -28,8 +28,7 @@
       </div>
       <div class="col-12">
         <textarea
-          name=""
-          id=""
+          name="message"
           cols="30"
           rows="10"
           placeholder="Body"
