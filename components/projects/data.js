@@ -37,4 +37,13 @@ export default  [
         githubRepo: "https://github.com/marwan-elabhar/mapty",
         tags: tagsList.filter(tag => ["JavaScript", "CSS"].includes(tag.name))
     },
+    {
+
+        id: 3,
+        name: "Forkify",
+        img: "img/forkify.png",
+        link: "https://forkify-web-app.vercel.app/",
+        githubRepo: "https://github.com/marwan-elabhar/forkify-app",
+        tags: tagsList.filter(tag => ["JavaScript", "SASS"].includes(tag.name))
+    },
 ]
