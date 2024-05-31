@@ -14,7 +14,7 @@ const showIcons = ref(false);
       class="upper-box d-flex flex-column justify-content-center align-items-center"
     >
       <div class="d-flex justify-content-center align-items-center w-100">
-        <img :src="project.img" alt="alt" class="project-image" />
+        <img :src="project.img" alt="project-icon" class="project-image" />
         <p class="ml-3 project-name">{{ project.name }}</p>
       </div>
 

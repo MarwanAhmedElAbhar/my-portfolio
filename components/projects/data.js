@@ -46,4 +46,13 @@ export default  [
         githubRepo: "https://github.com/marwan-elabhar/forkify-app",
         tags: tagsList.filter(tag => ["JavaScript", "SASS"].includes(tag.name))
     },
+    {
+
+        id: 4,
+        name: "Nexter",
+        img: "img/nexter.png",
+        link: "https://nexter-nu-seven.vercel.app/",
+        githubRepo: "https://github.com/marwan-elabhar/nexter",
+        tags: tagsList.filter(tag => ["SASS"].includes(tag.name))
+    },
 ]
